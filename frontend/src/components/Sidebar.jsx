@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 export default function Sidebar() {
-
-  
     return (
       <aside className="w-64 h-screen bg-white border-r border-gray-300">
       <div className="p-6 text-xl font-bold text-blue-600 border-b border-gray-300 h-20">RS-TECH</div>
@@ -12,7 +10,7 @@ export default function Sidebar() {
         <ul>
         {[
           { path: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-          { path: "/employee", label: "Employee", icon: Users },
+          { path: "/employees", label: "Employees", icon: Users },
           { path: "/calendar", label: "Calendar", icon: Calendar },
           { path: "/messages", label: "Messages", icon: MessageSquare },
         ].map((item) => {

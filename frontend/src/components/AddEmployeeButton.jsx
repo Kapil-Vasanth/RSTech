@@ -1,8 +1,10 @@
+
+
 export default function AddEmployeeButton() {
     return (
-      <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
+      <a href={"/employees/add"} className="bg-blue-500 text-white px-4 py-2 rounded-md">
         + Add New Employee
-      </button>
+      </a>
     );
   }
   
