@@ -10,7 +10,8 @@ db.serialize(() => {
       designation TEXT,
       project TEXT,
       type TEXT,
-      status TEXT
+      status TEXT,
+      avatar TEXT
     )
   `);
 });

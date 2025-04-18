@@ -16,7 +16,11 @@ export default function EmployeeRow({ data }) {
     <>
       <tr className="hover:bg-gray-100">
         <td className="px-4 py-2 flex items-center gap-2">
-          <img src={data.image} alt={data.name} className="w-8 h-8 rounded-full" />
+        <img
+            src={data.avatar ? `${import.meta.env.VITE_API_BASE_URL}${data.avatar}` : 'https://via.placeholder.com/128'}
+            alt="Employee"
+            className="size-16 object-cover rounded-full border"
+        />
           {data.name}
         </td>
         <td className="px-4 py-2">{data.id}</td>
